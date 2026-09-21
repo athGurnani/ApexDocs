@@ -58,9 +58,10 @@ and is best practice to ensure all your values are saved.
 on your telemetry confirming that the values have been saved, and then, you're good to go!
 
 ### Accessing Your Constants
-* If you wish to access the `FollowerConstants` JSON file on the Control Hub, start by connecting to it via WiFi or a USB cable
-* Open Android Studio and ensure that your Control Hub is connected by [ADB](https://developer.android.com/tools/adb).
-* Next, open the Device File Explorer and navigate to the `/sdcard/FIRST/` folder
-* There, you will see the `FollowerConstants.json` file. Double click to open it or right click to save it to your computer.
-
+* In order to access your tuned FollowerConstants, start by connecting your Control Hub to your 
+    computer via USB cable or WiFi.
+* Open Android Studio and ensure that your Control Hub is connected through [ADB](https://developer.android.com/tools/adb).
+* Next, open the Device File Explorer in Android Studio and navigate to the `/sdcard/FIRST/` folder. Once you have found `FollowerConstants.json`, double-click to open or right-click to save to your computer.
+* Alternatively, run `adb pull /sdcard/FIRST/FollowerConstants.json [target]` in the terminal.
+    Setting the target as `.` will send the file to your working directory, or you can specify a different location.
 </Steps>
